@@ -9,9 +9,12 @@ import pymongo
 
 hashtable = []
 
-conn = pymongo.MongoClient('localhost', 27017)
-db = conn.health
-coll = db.article
+try:
+	conn = pymongo.MongoClient('localhost', 27017)
+	db = conn.health
+	coll = db.article
+except:
+	pass
 
 def crawl(url, hashvalue):
 

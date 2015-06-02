@@ -37,10 +37,8 @@ def crawl(url, hashvalue):
     encoding = chardet.detect(string)['encoding']
     # string = unicode(string, encoding).encode('utf-8')
     # string = string.decode(encoding).encode('utf-8')
-    keywords = u''
-    description = u''
-    title = u''
-    text = u''
+
+    keywords = description = title = text = u''
 
     links = re.findall('<a href="(.*?)".*>', string)
 
@@ -121,7 +119,6 @@ while len(queue) != 0:
 
             if x.startswith('http://health.sina.com.cn') and x.endswith('.shtml') and count==0:
                 queue.append(x)
-    # print hashtable
     time.sleep(1)
 
 conn.close()

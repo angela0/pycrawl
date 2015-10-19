@@ -2,5 +2,6 @@
 1. pycurl
 2. pymongo
 3. chardet
+4. lxml
 
 可使用 pip 工具进行安装，windows平台 pycurl 模块可在 pycurl.sourceforge.net/download/ 下载相应版本进行安装

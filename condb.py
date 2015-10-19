@@ -33,8 +33,6 @@ class ConnectDB():
     def closeDB(self):
         self.conn.close()
 
-cd = ConnectDB(host='123.123.123.123')
 
-cd.connectMongo()
 
 
